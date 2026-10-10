@@ -57,7 +57,7 @@ fprintf('Diferencia máxima (debe ser ~0): %g\n', max(abs(hBP - y_delta)));
 %% EXPERIMENTO 1: CONVOLUCIÓN CON EL ECG 
 
 yBP_manual = miConvolucion(x, hBP);     
-yBP_matlab = conv(x, hBP);              
+yBP_matlab = conv(x, hBP);
 
 fprintf('¿Coinciden ambas convoluciones? %d\n', isequal(round(yBP_manual,10), round(yBP_matlab,10)));
 
